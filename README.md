@@ -1,4 +1,9 @@
-# Geez_Gofa_C
+## Live Demo
+
+View the full character comparison Noto Sans Ethiopic here:  
+[→ Open Font Comparison](https://debessay.github.io/Gofa_amharic_fonts/geez-full-compare.html)
+
+# Geez_Gofa_C Screenshot
 
 ![Geez_Gofa_C Preview](acts238.png)
 
@@ -17,10 +22,6 @@
 - TTF  
 - WOFF2  
 
-## Live Demo
-
-View the full character comparison here:  
-[→ Open Font Comparison](https://debessay.github.io/Gofa_amharic_fonts/geez-full-compare.html)
 
 ## Installation
 
@@ -35,7 +36,7 @@ Use the free jsDelivr CDN:
 @font-face {
   font-family: 'Geez_Gofa_C';
   src: url('https://cdn.jsdelivr.net/gh/debessay/Gofa_amharic_fonts@main/Geez_Gofa_C_200_regular_normal_plain.woff2') format('woff2');
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
