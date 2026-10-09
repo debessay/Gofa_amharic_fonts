@@ -8,17 +8,14 @@ Copyright (c) 01/01/2026, Aklilu Debessay , https://github.com/debessay/Gofa_amh
 with Reserved Font Name Geez_Gofa.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.  
-This license is copied below, and is also available with a FAQ at:  
-https\://openfontlicense.org  
-&nbsp;
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
 
-\----------------------------------------------------------------------
+----------------------------------------------------------------------
 
-#### SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 
-\----------------------------------------------------------------------
-
-&nbsp;
+----------------------------------------------------------------------
 
 PREAMBLE
 -----------
