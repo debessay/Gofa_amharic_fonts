@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geez_Gofa_C — free Ge'ez and Amharic font</title>
+  <meta name="description" content="Download Geez_Gofa_C, a free Ge'ez and Amharic typeface by Aklilu Debessay. Four styles, in OTF, TTF, and WOFF2, under the SIL Open Font License 1.1.">
+  <meta name="author" content="Aklilu Debessay">
+  <meta name="theme-color" content="#0d5c3d">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://debessay.github.io/Gofa_amharic_fonts/">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <meta property="og:title" content="Geez_Gofa_C — free Ge'ez and Amharic font">
+  <meta property="og:description" content="A free Ge'ez and Amharic typeface by Aklilu Debessay. Four styles — normal, condensed, expanded, and oblique — under the SIL Open Font License 1.1.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://debessay.github.io/Gofa_amharic_fonts/">
+  <meta property="og:site_name" content="Geez_Gofa_C">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://debessay.github.io/Gofa_amharic_fonts/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Geez_Gofa_C specimen showing the Ge'ez word ሰላም">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Geez_Gofa_C — free Ge'ez and Amharic font">
+  <meta name="twitter:description" content="A free Ge'ez and Amharic typeface by Aklilu Debessay. Four styles, OTF, TTF, and WOFF2, under the SIL Open Font License 1.1.">
+  <meta name="twitter:image" content="https://debessay.github.io/Gofa_amharic_fonts/og.png">
+  <meta name="twitter:image:alt" content="Geez_Gofa_C specimen showing the Ge'ez word ሰላም">
+
+  <link rel="preload" href="Geez_Gofa_C_200_regular_normal_plain.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Geez_Gofa_C",
+    "headline": "Geez_Gofa_C — free Ge'ez and Amharic font",
+    "description": "A free Ge'ez and Amharic typeface in four styles, released under the SIL Open Font License 1.1.",
+    "url": "https://debessay.github.io/Gofa_amharic_fonts/",
+    "image": "https://debessay.github.io/Gofa_amharic_fonts/og.png",
+    "inLanguage": ["gez", "am", "en"],
+    "encodingFormat": ["font/otf", "font/ttf", "font/woff2"],
+    "license": "https://openfontlicense.org",
+    "version": "1.000",
+    "creator": {
+      "@type": "Person",
+      "name": "Aklilu Debessay",
+      "url": "https://github.com/debessay"
+    }
+  }
+  </script>
+
+  <style>
+    @font-face {
+      font-family: "Gofa Normal";
+      src: url("Geez_Gofa_C_200_regular_normal_plain.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Gofa Condensed";
+      src: url("Geez_Gofa_C_200_regular_condenced_plain.woff2") format("woff2");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Gofa Expanded";
+      src: url("Geez_Gofa_C_200_regular_expanded_plain.woff2") format("woff2");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Gofa Oblique";
+      src: url("Geez_Gofa_C_200_regular_normal_Oblique.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --paper: #f3efe6;
+      --ink: #1c1915;
+      --muted: #5c564c;
+      --line: #e2d7c6;
+      --green: #0d5c3d;
+      --green-deep: #084430;
+      --gold: #8a6830;
+      --card: #fffdf8;
+      --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      --sans: system-ui, "Segoe UI", sans-serif;
+      --mono: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+      --gofa: "Gofa Normal", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; height: auto; }
+    a { color: var(--green); }
+    a:hover { color: var(--green-deep); }
+    :focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+    .skip {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      background: white;
+      color: var(--ink);
+      padding: 0.5rem 0.8rem;
+      z-index: 30;
+    }
+    .skip:focus { top: 0.6rem; }
+
+    .wrap {
+      width: min(1080px, calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(243, 239, 230, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .top .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4rem 1rem;
+      padding: 0.7rem 0;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      color: var(--ink);
+      text-decoration: none;
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .brand span {
+      font-family: var(--gofa);
+      font-size: 1.45rem;
+      line-height: 1;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.15rem 0.9rem;
+    }
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 0.35rem 0;
+    }
+    nav a:hover { color: var(--green); text-decoration: underline; }
+
+    .hero { padding: 2.5rem 0 1rem; }
+    .kicker {
+      margin: 0 0 0.6rem;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(2.6rem, 6vw, 4.6rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+    }
+    .lede {
+      max-width: 40rem;
+      margin: 0.9rem 0 0;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.4rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+    .btn-primary { background: var(--green); color: #fff; }
+    .btn-primary:hover { background: var(--green-deep); color: #fff; }
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink);
+      border-color: #cbbfa8;
+    }
+    .btn-ghost:hover { border-color: var(--ink); color: var(--ink); }
+    .btn-small {
+      min-height: 40px;
+      padding: 0.35rem 0.8rem;
+      background: var(--paper);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    .btn-small:hover { border-color: var(--green); color: var(--green); }
+
+    .specimen {
+      margin-top: 2rem;
+      padding: 1.4rem 1.2rem 1.2rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+    .style-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+    }
+    .style-row span {
+      margin-right: 0.3rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .style-row button {
+      min-height: 40px;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+    .style-row button[aria-pressed="true"] {
+      background: var(--green);
+      border-color: var(--green);
+      color: white;
+    }
+    .display {
+      margin: 0.6rem 0 0;
+      font-family: var(--gofa);
+      font-weight: 400;
+      font-style: normal;
+      font-synthesis: none;
+      font-size: clamp(4.2rem, 16vw, 8.4rem);
+      line-height: 1.45;
+      letter-spacing: 0;
+      padding-bottom: 0.06em;
+    }
+    .passage, .fidel-line, .latin-line, .style-sample, .fidel, .extra-glyphs {
+      font-family: var(--gofa);
+      font-weight: 400;
+      font-style: normal;
+      font-synthesis: none;
+    }
+    .passage {
+      margin: 0.2rem 0 0;
+      max-width: 22em;
+      font-size: clamp(1.55rem, 3.4vw, 2.15rem);
+      line-height: 1.85;
+    }
+    .fidel-line {
+      margin: 1rem 0 0;
+      font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+      line-height: 1.8;
+      letter-spacing: 0.04em;
+    }
+    .latin-line {
+      margin: 0.4rem 0 0;
+      font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+      line-height: 1.5;
+    }
+    .caption {
+      margin: 0.9rem 0 0;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 0.92rem;
+    }
+    #style-status {
+      margin: 0.7rem 0 0;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 0.92rem;
+    }
+
+    section { padding: 2.4rem 0; }
+    h2 {
+      margin: 0 0 0.4rem;
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .section-intro {
+      margin: 0 0 1.2rem;
+      max-width: 40rem;
+      color: var(--muted);
+    }
+
+    .band {
+      background: var(--green-deep);
+      color: #f6f1e6;
+      border-radius: 18px;
+      padding: 1.3rem 1.3rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .band h2, .band p { color: inherit; }
+    .band p { margin: 0.25rem 0 0; max-width: 36rem; }
+    .btn-light {
+      background: #f6f1e6;
+      color: var(--green-deep);
+    }
+    .btn-light:hover { background: white; color: var(--green-deep); }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 0.9rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1rem 1rem 1.05rem;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+    .meta {
+      margin: 0.25rem 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .file {
+      margin: 0.35rem 0 0.6rem;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      line-height: 1.4;
+      word-break: break-all;
+    }
+    .style-sample {
+      margin: 0.7rem 0 0.85rem;
+      font-size: 2.4rem;
+      line-height: 1.3;
+    }
+    .sample-normal { font-family: "Gofa Normal", sans-serif; }
+    .sample-condensed { font-family: "Gofa Condensed", sans-serif; }
+    .sample-expanded { font-family: "Gofa Expanded", sans-serif; }
+    .sample-oblique { font-family: "Gofa Oblique", sans-serif; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+    .install h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+    .install p, .install ol { margin: 0; }
+    .install ol { padding-left: 1.15rem; }
+    .install li + li { margin-top: 0.25rem; }
+
+    .web-card { margin-top: 0.9rem; }
+    .code-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .code-head h3 { margin: 0; }
+    pre {
+      margin: 0;
+      padding: 1rem;
+      overflow-x: auto;
+      background: #221e19;
+      color: #f3efe6;
+      border-radius: 12px;
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+    .copy {
+      min-height: 40px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: white;
+      font: inherit;
+      padding: 0.3rem 0.85rem;
+      cursor: pointer;
+    }
+
+    .chart-scroll {
+      overflow: auto;
+      max-height: 70vh;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+    }
+    table.fidel {
+      border-collapse: collapse;
+      width: max-content;
+      min-width: 100%;
+    }
+    .fidel th, .fidel td {
+      text-align: center;
+      padding: 0.45rem 0.55rem;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.7rem;
+      line-height: 1.35;
+      min-width: 3rem;
+    }
+    .fidel th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #f7f3ea;
+      font-family: "Gofa Normal", var(--sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .fidel th span {
+      display: block;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-weight: 500;
+      font-size: 0.75rem;
+    }
+    .fidel td {
+      font-family: var(--gofa);
+      font-synthesis: none;
+      line-height: 1.8;
+      padding-top: 0.45rem;
+      padding-bottom: 0.7rem;
+    }
+    .hint { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.92rem; }
+
+    .extra-glyphs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.15rem;
+      margin-top: 0.7rem;
+    }
+    .extra-glyphs span {
+      min-width: 2.4rem;
+      padding: 0.25rem 0.35rem;
+      text-align: center;
+      font-size: 1.7rem;
+      line-height: 1.4;
+    }
+    h3.sub {
+      margin: 1.4rem 0 0.3rem;
+      font-family: var(--serif);
+      font-size: 1.35rem;
+    }
+
+    .mono-link {
+      display: block;
+      margin-top: 0.8rem;
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.4rem 0 2.2rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer p { margin: 0.2rem 0; }
+    footer a { color: var(--green); }
+
+    @media (max-width: 640px) {
+      .hero { padding-top: 1.6rem; }
+      .specimen { padding: 1rem 0.85rem; }
+      .fidel td { font-size: 1.45rem; padding: 0.4rem; }
+      .fidel th { padding: 0.4rem; }
+      .band { padding: 1.1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#specimen">Skip to specimen</a>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#top">Geez_Gofa_C <span lang="am">ሰ</span></a>
+      <nav aria-label="Page">
+        <a href="#specimen">Specimen</a>
+        <a href="#download">Download</a>
+        <a href="#install">Install</a>
+        <a href="#glyphs">Glyphs</a>
+        <a href="#license">License</a>
+        <a href="https://github.com/debessay/Gofa_amharic_fonts">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero" id="specimen">
+      <p class="kicker">Free Ge'ez and Amharic typeface</p>
+      <h1>Geez_Gofa_C</h1>
+      <p class="lede">A rounded, pen-drawn sans for Ge'ez and Latin, in four styles. Designed by Aklilu Debessay and released free under the SIL Open Font License 1.1.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="Geez_Gofa_C_200.zip" download>Download all styles</a>
+        <a class="btn btn-ghost" href="#glyphs">Browse the syllabary</a>
+      </div>
+
+      <div class="specimen">
+        <div class="style-row" role="group" aria-label="Type style">
+          <span>Style</span>
+          <button type="button" data-style="normal" aria-pressed="true">Normal</button>
+          <button type="button" data-style="condensed" aria-pressed="false">Condensed</button>
+          <button type="button" data-style="expanded" aria-pressed="false">Expanded</button>
+          <button type="button" data-style="oblique" aria-pressed="false">Oblique</button>
+        </div>
+        <p class="display" lang="am">ሰላም</p>
+        <p class="passage" lang="am">በሰላም ይምጡ። ይህ ቅርጸ-ቁምፊ ለግዕዝ እና ለአማርኛ ተዘጋጅቷል።</p>
+        <p class="fidel-line" lang="am">ሀ ለ ሐ መ ሠ ረ ሰ ሸ ቀ በ ተ ቸ ኀ ነ አ ከ ወ ዐ ዘ የ ደ ገ ጠ ጨ ጰ ጸ ፀ ፈ ፐ</p>
+        <p class="latin-line" lang="en">Geez Gofa — rounded, pen-drawn letters. 12345</p>
+        <p id="style-status">Showing the normal style. In a font menu this is Geez_Gofa_C Regular.</p>
+        <p class="caption">Version 1.000. The files are labeled 200. Normal and oblique install as the family Geez_Gofa_C. Condensed and expanded use their own family names, listed with each download.</p>
+      </div>
+    </div>
+
+    <section id="download">
+      <div class="wrap">
+        <div class="band">
+          <div>
+            <h2>Download</h2>
+            <p>One zip with all four styles, each as OTF, TTF, and WOFF2. Or take a single file below.</p>
+          </div>
+          <a class="btn btn-light" href="Geez_Gofa_C_200.zip" download>Download all styles</a>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Normal</h3>
+            <p class="meta">Font menu: Geez_Gofa_C Regular</p>
+            <p class="style-sample sample-normal" lang="am">ሰላም</p>
+            <p class="file">Geez_Gofa_C_200_regular_normal_plain</p>
+            <div class="btn-row">
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_normal_plain.otf" download>OTF</a>
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_normal_plain.ttf" download>TTF</a>
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_normal_plain.woff2" download>WOFF2</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Condensed</h3>
+            <p class="meta">Font menu: Geez_Gofa_C Light Cond</p>
+            <p class="style-sample sample-condensed" lang="am">ሰላም</p>
+            <p class="file">Geez_Gofa_C_200_regular_condenced_plain</p>
+            <div class="btn-row">
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_condenced_plain.otf" download>OTF</a>
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_condenced_plain.ttf" download>TTF</a>
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_condenced_plain.woff2" download>WOFF2</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Expanded</h3>
+            <p class="meta">Font menu: Geez_Gofa_C Light Exp</p>
+            <p class="style-sample sample-expanded" lang="am">ሰላም</p>
+            <p class="file">Geez_Gofa_C_200_regular_expanded_plain</p>
+            <div class="btn-row">
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_expanded_plain.otf" download>OTF</a>
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_expanded_plain.ttf" download>TTF</a>
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_expanded_plain.woff2" download>WOFF2</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Oblique</h3>
+            <p class="meta">Font menu: Geez_Gofa_C Oblique, the italic of Geez_Gofa_C</p>
+            <p class="style-sample sample-oblique" lang="am">ሰላም</p>
+            <p class="file">Geez_Gofa_C_200_regular_normal_Oblique</p>
+            <div class="btn-row">
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_normal_Oblique.otf" download>OTF</a>
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_normal_Oblique.ttf" download>TTF</a>
+              <a class="btn btn-small" href="Geez_Gofa_C_200_regular_normal_Oblique.woff2" download>WOFF2</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="install">
+      <div class="wrap">
+        <h2>Install</h2>
+        <p class="section-intro">Use OTF or TTF on a computer or phone. Use WOFF2 on a website.</p>
+        <div class="cards install">
+          <article class="card">
+            <h3>Windows</h3>
+            <ol>
+              <li>Download an OTF or TTF file, or the zip of all four styles.</li>
+              <li>Double-click the font and choose Install. You can also right-click it and choose Install, or Install for all users.</li>
+              <li>Restart any app that was already open. Look for Geez_Gofa_C.</li>
+            </ol>
+          </article>
+          <article class="card">
+            <h3>Mac</h3>
+            <ol>
+              <li>Download an OTF or TTF file.</li>
+              <li>Double-click it so Font Book opens, then click Install Font.</li>
+              <li>Condensed and expanded appear under their own names: Geez_Gofa_C Light Cond and Geez_Gofa_C Light Exp.</li>
+            </ol>
+          </article>
+          <article class="card">
+            <h3>iPhone and iPad</h3>
+            <p>iOS does not install a loose font file from the Files app. Download the OTF or TTF, then install it with a font app such as AnyFont or Fontcase, or with a configuration profile. It then shows up in apps that allow custom fonts, including Pages and Keynote.</p>
+          </article>
+          <article class="card">
+            <h3>Android</h3>
+            <p>Download the TTF. A few phones can apply a custom font from Settings, under Display. Many cannot. If that setting is missing, install the file with a font app. It is then available in apps that let you choose a typeface.</p>
+          </article>
+        </div>
+
+        <article class="card web-card">
+          <div class="code-head">
+            <h3>On the web</h3>
+            <button type="button" class="copy" id="copy-css" data-copy="css-snippet">Copy CSS</button>
+          </div>
+          <p class="meta">These <code>@font-face</code> rules load the four styles from jsDelivr. Normal and oblique share the family name <code>Geez_Gofa_C</code>. Use <code>font-style: italic</code> for the oblique. Condensed and expanded keep the shorter family names stored in the files.</p>
+          <pre><code id="css-snippet">@font-face {
+  font-family: "Geez_Gofa_C";
+  src: url("https://cdn.jsdelivr.net/gh/debessay/Gofa_amharic_fonts@main/Geez_Gofa_C_200_regular_normal_plain.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geez_Gofa_C";
+  src: url("https://cdn.jsdelivr.net/gh/debessay/Gofa_amharic_fonts@main/Geez_Gofa_C_200_regular_normal_Oblique.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geez_Gofa_C Light Cond";
+  src: url("https://cdn.jsdelivr.net/gh/debessay/Gofa_amharic_fonts@main/Geez_Gofa_C_200_regular_condenced_plain.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geez_Gofa_C Light Exp";
+  src: url("https://cdn.jsdelivr.net/gh/debessay/Gofa_amharic_fonts@main/Geez_Gofa_C_200_regular_expanded_plain.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}</code></pre>
+          <p class="caption">To host the files yourself, download the WOFF2 files and replace each jsDelivr address with your own path. The normal face is weight 400, so <code>font-weight: normal</code> matches it.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="glyphs">
+      <div class="wrap">
+        <h2>Glyphs</h2>
+        <p class="section-intro">651 characters: 550 in the Ethiopic blocks, plus Latin. The chart is the core syllabary. Each row is one consonant and each column is an order. The same style buttons as the specimen apply here.</p>
+        <div class="style-row" role="group" aria-label="Syllabary style">
+          <span>Style</span>
+          <button type="button" data-style="normal" aria-pressed="true">Normal</button>
+          <button type="button" data-style="condensed" aria-pressed="false">Condensed</button>
+          <button type="button" data-style="expanded" aria-pressed="false">Expanded</button>
+          <button type="button" data-style="oblique" aria-pressed="false">Oblique</button>
+        </div>
+        <p class="hint">Swipe sideways to see all eight orders. Hover or focus a cell for its Unicode value.</p>
+        <div class="chart-scroll" tabindex="0">
+          <table class="fidel">
+            <thead>
+              <tr>
+                <th scope="col">ግዕዝ<span>ə</span></th>
+                <th scope="col">ካዕብ<span>u</span></th>
+                <th scope="col">ሣልስ<span>i</span></th>
+                <th scope="col">ራብዕ<span>a</span></th>
+                <th scope="col">ኃምስ<span>e</span></th>
+                <th scope="col">ሳድስ<span>ɨ</span></th>
+                <th scope="col">ሳብዕ<span>o</span></th>
+                <th scope="col">ዲቃላ<span>ʷa</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td title="U+1200">ሀ</td><td title="U+1201">ሁ</td><td title="U+1202">ሂ</td><td title="U+1203">ሃ</td><td title="U+1204">ሄ</td><td title="U+1205">ህ</td><td title="U+1206">ሆ</td><td title="U+1207">ሇ</td></tr>
+              <tr><td title="U+1208">ለ</td><td title="U+1209">ሉ</td><td title="U+120A">ሊ</td><td title="U+120B">ላ</td><td title="U+120C">ሌ</td><td title="U+120D">ል</td><td title="U+120E">ሎ</td><td title="U+120F">ሏ</td></tr>
+              <tr><td title="U+1210">ሐ</td><td title="U+1211">ሑ</td><td title="U+1212">ሒ</td><td title="U+1213">ሓ</td><td title="U+1214">ሔ</td><td title="U+1215">ሕ</td><td title="U+1216">ሖ</td><td title="U+1217">ሗ</td></tr>
+              <tr><td title="U+1218">መ</td><td title="U+1219">ሙ</td><td title="U+121A">ሚ</td><td title="U+121B">ማ</td><td title="U+121C">ሜ</td><td title="U+121D">ም</td><td title="U+121E">ሞ</td><td title="U+121F">ሟ</td></tr>
+              <tr><td title="U+1220">ሠ</td><td title="U+1221">ሡ</td><td title="U+1222">ሢ</td><td title="U+1223">ሣ</td><td title="U+1224">ሤ</td><td title="U+1225">ሥ</td><td title="U+1226">ሦ</td><td title="U+1227">ሧ</td></tr>
+              <tr><td title="U+1228">ረ</td><td title="U+1229">ሩ</td><td title="U+122A">ሪ</td><td title="U+122B">ራ</td><td title="U+122C">ሬ</td><td title="U+122D">ር</td><td title="U+122E">ሮ</td><td title="U+122F">ሯ</td></tr>
+              <tr><td title="U+1230">ሰ</td><td title="U+1231">ሱ</td><td title="U+1232">ሲ</td><td title="U+1233">ሳ</td><td title="U+1234">ሴ</td><td title="U+1235">ስ</td><td title="U+1236">ሶ</td><td title="U+1237">ሷ</td></tr>
+              <tr><td title="U+1238">ሸ</td><td title="U+1239">ሹ</td><td title="U+123A">ሺ</td><td title="U+123B">ሻ</td><td title="U+123C">ሼ</td><td title="U+123D">ሽ</td><td title="U+123E">ሾ</td><td title="U+123F">ሿ</td></tr>
+              <tr><td title="U+1240">ቀ</td><td title="U+1241">ቁ</td><td title="U+1242">ቂ</td><td title="U+1243">ቃ</td><td title="U+1244">ቄ</td><td title="U+1245">ቅ</td><td title="U+1246">ቆ</td><td title="U+1247">ቇ</td></tr>
+              <tr><td title="U+1250">ቐ</td><td title="U+1251">ቑ</td><td title="U+1252">ቒ</td><td title="U+1253">ቓ</td><td title="U+1254">ቔ</td><td title="U+1255">ቕ</td><td title="U+1256">ቖ</td><td title="U+1257, drawn in this font, not assigned in Unicode">቗</td></tr>
+              <tr><td title="U+1260">በ</td><td title="U+1261">ቡ</td><td title="U+1262">ቢ</td><td title="U+1263">ባ</td><td title="U+1264">ቤ</td><td title="U+1265">ብ</td><td title="U+1266">ቦ</td><td title="U+1267">ቧ</td></tr>
+              <tr><td title="U+1268">ቨ</td><td title="U+1269">ቩ</td><td title="U+126A">ቪ</td><td title="U+126B">ቫ</td><td title="U+126C">ቬ</td><td title="U+126D">ቭ</td><td title="U+126E">ቮ</td><td title="U+126F">ቯ</td></tr>
+              <tr><td title="U+1270">ተ</td><td title="U+1271">ቱ</td><td title="U+1272">ቲ</td><td title="U+1273">ታ</td><td title="U+1274">ቴ</td><td title="U+1275">ት</td><td title="U+1276">ቶ</td><td title="U+1277">ቷ</td></tr>
+              <tr><td title="U+1278">ቸ</td><td title="U+1279">ቹ</td><td title="U+127A">ቺ</td><td title="U+127B">ቻ</td><td title="U+127C">ቼ</td><td title="U+127D">ች</td><td title="U+127E">ቾ</td><td title="U+127F">ቿ</td></tr>
+              <tr><td title="U+1280">ኀ</td><td title="U+1281">ኁ</td><td title="U+1282">ኂ</td><td title="U+1283">ኃ</td><td title="U+1284">ኄ</td><td title="U+1285">ኅ</td><td title="U+1286">ኆ</td><td title="U+1287">ኇ</td></tr>
+              <tr><td title="U+1290">ነ</td><td title="U+1291">ኑ</td><td title="U+1292">ኒ</td><td title="U+1293">ና</td><td title="U+1294">ኔ</td><td title="U+1295">ን</td><td title="U+1296">ኖ</td><td title="U+1297">ኗ</td></tr>
+              <tr><td title="U+1298">ኘ</td><td title="U+1299">ኙ</td><td title="U+129A">ኚ</td><td title="U+129B">ኛ</td><td title="U+129C">ኜ</td><td title="U+129D">ኝ</td><td title="U+129E">ኞ</td><td title="U+129F">ኟ</td></tr>
+              <tr><td title="U+12A0">አ</td><td title="U+12A1">ኡ</td><td title="U+12A2">ኢ</td><td title="U+12A3">ኣ</td><td title="U+12A4">ኤ</td><td title="U+12A5">እ</td><td title="U+12A6">ኦ</td><td title="U+12A7">ኧ</td></tr>
+              <tr><td title="U+12A8">ከ</td><td title="U+12A9">ኩ</td><td title="U+12AA">ኪ</td><td title="U+12AB">ካ</td><td title="U+12AC">ኬ</td><td title="U+12AD">ክ</td><td title="U+12AE">ኮ</td><td title="U+12AF">ኯ</td></tr>
+              <tr><td title="U+12B8">ኸ</td><td title="U+12B9">ኹ</td><td title="U+12BA">ኺ</td><td title="U+12BB">ኻ</td><td title="U+12BC">ኼ</td><td title="U+12BD">ኽ</td><td title="U+12BE">ኾ</td><td title="U+12BF, drawn in this font, not assigned in Unicode">኿</td></tr>
+              <tr><td title="U+12C8">ወ</td><td title="U+12C9">ዉ</td><td title="U+12CA">ዊ</td><td title="U+12CB">ዋ</td><td title="U+12CC">ዌ</td><td title="U+12CD">ው</td><td title="U+12CE">ዎ</td><td title="U+12CF">ዏ</td></tr>
+              <tr><td title="U+12D0">ዐ</td><td title="U+12D1">ዑ</td><td title="U+12D2">ዒ</td><td title="U+12D3">ዓ</td><td title="U+12D4">ዔ</td><td title="U+12D5">ዕ</td><td title="U+12D6">ዖ</td><td title="U+12D7, drawn in this font, not assigned in Unicode">዗</td></tr>
+              <tr><td title="U+12D8">ዘ</td><td title="U+12D9">ዙ</td><td title="U+12DA">ዚ</td><td title="U+12DB">ዛ</td><td title="U+12DC">ዜ</td><td title="U+12DD">ዝ</td><td title="U+12DE">ዞ</td><td title="U+12DF">ዟ</td></tr>
+              <tr><td title="U+12E0">ዠ</td><td title="U+12E1">ዡ</td><td title="U+12E2">ዢ</td><td title="U+12E3">ዣ</td><td title="U+12E4">ዤ</td><td title="U+12E5">ዥ</td><td title="U+12E6">ዦ</td><td title="U+12E7">ዧ</td></tr>
+              <tr><td title="U+12E8">የ</td><td title="U+12E9">ዩ</td><td title="U+12EA">ዪ</td><td title="U+12EB">ያ</td><td title="U+12EC">ዬ</td><td title="U+12ED">ይ</td><td title="U+12EE">ዮ</td><td title="U+12EF">ዯ</td></tr>
+              <tr><td title="U+12F0">ደ</td><td title="U+12F1">ዱ</td><td title="U+12F2">ዲ</td><td title="U+12F3">ዳ</td><td title="U+12F4">ዴ</td><td title="U+12F5">ድ</td><td title="U+12F6">ዶ</td><td title="U+12F7">ዷ</td></tr>
+              <tr><td title="U+12F8">ዸ</td><td title="U+12F9">ዹ</td><td title="U+12FA">ዺ</td><td title="U+12FB">ዻ</td><td title="U+12FC">ዼ</td><td title="U+12FD">ዽ</td><td title="U+12FE">ዾ</td><td title="U+12FF">ዿ</td></tr>
+              <tr><td title="U+1300">ጀ</td><td title="U+1301">ጁ</td><td title="U+1302">ጂ</td><td title="U+1303">ጃ</td><td title="U+1304">ጄ</td><td title="U+1305">ጅ</td><td title="U+1306">ጆ</td><td title="U+1307">ጇ</td></tr>
+              <tr><td title="U+1308">ገ</td><td title="U+1309">ጉ</td><td title="U+130A">ጊ</td><td title="U+130B">ጋ</td><td title="U+130C">ጌ</td><td title="U+130D">ግ</td><td title="U+130E">ጎ</td><td title="U+130F">ጏ</td></tr>
+              <tr><td title="U+1318">ጘ</td><td title="U+1319">ጙ</td><td title="U+131A">ጚ</td><td title="U+131B">ጛ</td><td title="U+131C">ጜ</td><td title="U+131D">ጝ</td><td title="U+131E">ጞ</td><td title="U+131F">ጟ</td></tr>
+              <tr><td title="U+1320">ጠ</td><td title="U+1321">ጡ</td><td title="U+1322">ጢ</td><td title="U+1323">ጣ</td><td title="U+1324">ጤ</td><td title="U+1325">ጥ</td><td title="U+1326">ጦ</td><td title="U+1327">ጧ</td></tr>
+              <tr><td title="U+1328">ጨ</td><td title="U+1329">ጩ</td><td title="U+132A">ጪ</td><td title="U+132B">ጫ</td><td title="U+132C">ጬ</td><td title="U+132D">ጭ</td><td title="U+132E">ጮ</td><td title="U+132F">ጯ</td></tr>
+              <tr><td title="U+1330">ጰ</td><td title="U+1331">ጱ</td><td title="U+1332">ጲ</td><td title="U+1333">ጳ</td><td title="U+1334">ጴ</td><td title="U+1335">ጵ</td><td title="U+1336">ጶ</td><td title="U+1337">ጷ</td></tr>
+              <tr><td title="U+1338">ጸ</td><td title="U+1339">ጹ</td><td title="U+133A">ጺ</td><td title="U+133B">ጻ</td><td title="U+133C">ጼ</td><td title="U+133D">ጽ</td><td title="U+133E">ጾ</td><td title="U+133F">ጿ</td></tr>
+              <tr><td title="U+1340">ፀ</td><td title="U+1341">ፁ</td><td title="U+1342">ፂ</td><td title="U+1343">ፃ</td><td title="U+1344">ፄ</td><td title="U+1345">ፅ</td><td title="U+1346">ፆ</td><td title="U+1347">ፇ</td></tr>
+              <tr><td title="U+1348">ፈ</td><td title="U+1349">ፉ</td><td title="U+134A">ፊ</td><td title="U+134B">ፋ</td><td title="U+134C">ፌ</td><td title="U+134D">ፍ</td><td title="U+134E">ፎ</td><td title="U+134F">ፏ</td></tr>
+              <tr><td title="U+1350">ፐ</td><td title="U+1351">ፑ</td><td title="U+1352">ፒ</td><td title="U+1353">ፓ</td><td title="U+1354">ፔ</td><td title="U+1355">ፕ</td><td title="U+1356">ፖ</td><td title="U+1357">ፗ</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub">Labialized</h3>
+        <div class="chart-scroll" tabindex="0">
+          <table class="fidel">
+            <thead>
+              <tr>
+                <th scope="col">ግዕዝ<span>ʷə</span></th>
+                <th scope="col">ሣልስ<span>ʷi</span></th>
+                <th scope="col">ራብዕ<span>ʷa</span></th>
+                <th scope="col">ኃምስ<span>ʷe</span></th>
+                <th scope="col">ሳድስ<span>ʷɨ</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td title="U+1248">ቈ</td><td title="U+124A">ቊ</td><td title="U+124B">ቋ</td><td title="U+124C">ቌ</td><td title="U+124D">ቍ</td></tr>
+              <tr><td title="U+1258">ቘ</td><td title="U+125A">ቚ</td><td title="U+125B">ቛ</td><td title="U+125C">ቜ</td><td title="U+125D">ቝ</td></tr>
+              <tr><td title="U+1288">ኈ</td><td title="U+128A">ኊ</td><td title="U+128B">ኋ</td><td title="U+128C">ኌ</td><td title="U+128D">ኍ</td></tr>
+              <tr><td title="U+12B0">ኰ</td><td title="U+12B2">ኲ</td><td title="U+12B3">ኳ</td><td title="U+12B4">ኴ</td><td title="U+12B5">ኵ</td></tr>
+              <tr><td title="U+12C0">ዀ</td><td title="U+12C2">ዂ</td><td title="U+12C3">ዃ</td><td title="U+12C4">ዄ</td><td title="U+12C5">ዅ</td></tr>
+              <tr><td title="U+1310">ጐ</td><td title="U+1312">ጒ</td><td title="U+1313">ጓ</td><td title="U+1314">ጔ</td><td title="U+1315">ጕ</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub">Punctuation and numerals</h3>
+        <div class="extra-glyphs" lang="am"><span title="U+1360">፠</span><span title="U+1361">፡</span><span title="U+1362">።</span><span title="U+1363">፣</span><span title="U+1364">፤</span><span title="U+1365">፥</span><span title="U+1366">፦</span><span title="U+1367">፧</span><span title="U+1368">፨</span><span title="U+1369">፩</span><span title="U+136A">፪</span><span title="U+136B">፫</span><span title="U+136C">፬</span><span title="U+136D">፭</span><span title="U+136E">፮</span><span title="U+136F">፯</span><span title="U+1370">፰</span><span title="U+1371">፱</span><span title="U+1372">፲</span><span title="U+1373">፳</span><span title="U+1374">፴</span><span title="U+1375">፵</span><span title="U+1376">፶</span><span title="U+1377">፷</span><span title="U+1378">፸</span><span title="U+1379">፹</span><span title="U+137A">፺</span><span title="U+137B">፻</span><span title="U+137C">፼</span></div>
+        <p class="hint">Ethiopic Supplement, Ethiopic Extended, and Ethiopic Extended-A are in the font as well. <a href="geez-full-compare.html">Open the full character comparison</a> to see every character next to Noto Sans Ethiopic, with its Unicode value.</p>
+      </div>
+    </section>
+
+    <section id="monospace">
+      <div class="wrap">
+        <h2>Monospace companion</h2>
+        <p class="section-intro">Geez_Gofa_mono_C is a separate monospace font for Ge'ez, Amharic, and Latin, with 578 characters. It is also free under the SIL Open Font License 1.1.</p>
+        <a class="btn btn-primary" href="https://github.com/debessay/Geez_monospace_font">Geez_Gofa_mono_C on GitHub</a>
+        <a class="mono-link" href="https://github.com/debessay/Geez_monospace_font/releases/tag/V1.0">Download Geez_Gofa_mono_C v1.0</a>
+      </div>
+    </section>
+
+    <section id="license">
+      <div class="wrap">
+        <h2>License</h2>
+        <p class="section-intro">Geez_Gofa_C is licensed under the <a href="https://openfontlicense.org">SIL Open Font License 1.1</a>. You may use, study, modify, and share the fonts, including in commercial work. Do not sell the font files by themselves. A modified version needs its own name: the reserved font names are Geez_Gofa_C and Geez_Gofa.</p>
+        <p><a href="OFL.txt">Read the full license (OFL.txt)</a></p>
+        <p class="meta">Copyright 2026 Aklilu Debessay. <a href="mailto:aklilubd@gmail.com">aklilubd@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Geez_Gofa_C · designed by <a href="https://github.com/debessay">Aklilu Debessay</a></p>
+      <p>A missing or odd character? <a href="https://github.com/debessay/Gofa_amharic_fonts/issues">Open an issue</a>.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var families = {
+        normal: '"Gofa Normal", sans-serif',
+        condensed: '"Gofa Condensed", sans-serif',
+        expanded: '"Gofa Expanded", sans-serif',
+        oblique: '"Gofa Oblique", sans-serif'
+      };
+      var notes = {
+        normal: "Showing the normal style. In a font menu this is Geez_Gofa_C Regular.",
+        condensed: "Showing the condensed style. In a font menu this is Geez_Gofa_C Light Cond.",
+        expanded: "Showing the expanded style. In a font menu this is Geez_Gofa_C Light Exp.",
+        oblique: "Showing the oblique style. It is the italic of Geez_Gofa_C."
+      };
+      var targets = document.querySelectorAll(".display, .passage, .fidel-line, .latin-line, .fidel td, .extra-glyphs");
+      var buttons = document.querySelectorAll("[data-style]");
+      var status = document.getElementById("style-status");
+
+      function apply(style) {
+        var family = families[style] || families.normal;
+        targets.forEach(function (el) { el.style.fontFamily = family; });
+        buttons.forEach(function (btn) {
+          btn.setAttribute("aria-pressed", btn.getAttribute("data-style") === style ? "true" : "false");
+        });
+        if (status) status.textContent = notes[style] || notes.normal;
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          apply(btn.getAttribute("data-style"));
+        });
+      });
+
+      var copyBtn = document.getElementById("copy-css");
+      if (copyBtn) {
+        copyBtn.addEventListener("click", function () {
+          var code = document.getElementById("css-snippet");
+          var text = code ? code.textContent : "";
+          var done = function (label) {
+            copyBtn.textContent = label;
+            setTimeout(function () { copyBtn.textContent = "Copy CSS"; }, 1800);
+          };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(function () { done("Copied"); }, function () { done("Select the CSS"); });
+          } else {
+            done("Select the CSS");
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
