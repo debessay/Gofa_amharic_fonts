@@ -7,7 +7,7 @@ View the full character comparison Noto Sans Ethiopic here:
 
 ![Geez_Gofa_C Preview](acts238.png)
 
-**Geez_Gofa_C** is a modern Ethiopian (Ge'ez / Amharic) typeface designed in Light weight (200).
+**Geez_Gofa_C** is a free Ge'ez script font for Tigrinya, Amharic and Ge'ez, designed in Light weight (200).
 
 ## Styles Included
 
