@@ -1,10 +1,10 @@
-Copyright (c) 01/01/2026, Aklilu Debessay , https://github.com/debessay/Gofa_amharic_fonts | aklilubd@gmail.com,  
+Copyright (c) 2025-2026, Aklilu Debessay
 with Reserved Font Name Geez_Gofa_C.
 
-Copyright (c) 01/01/2026, Aklilu Debessay , https://github.com/debessay/Gofa_amharic_fonts | aklilubd@gmail.com,  
+Copyright (c) 2025-2026, Aklilu Debessay
 with Reserved Font Name Geez_Gofa.
 
-Copyright (c) 01/01/2026, Aklilu Debessay , https://github.com/debessay/Gofa_amharic_fonts | aklilubd@gmail.com,  
+Copyright (c) 2025-2026, Aklilu Debessay
 with Reserved Font Name Geez_Gofa.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.  

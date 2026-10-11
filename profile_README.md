@@ -1,6 +1,6 @@
 # Hi, I'm Aklilu Debessay 👋
 
-I design free **Ge'ez / Amharic (Ethiopic) fonts** alongside my regular work.
+I design free **Ge'ez script fonts for Tigrinya, Amharic and Ge'ez** alongside my regular work.
 All my fonts are free for personal and commercial use under the
 **SIL Open Font License 1.1**.
 
