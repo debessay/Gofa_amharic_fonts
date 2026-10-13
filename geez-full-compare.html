@@ -3,90 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ge'ez Font Comparison – Alternating Noto / Zenawi + Unicode</title>
+    <title>Geez_Gofa_C character comparison</title>
+    <meta name="description" content="Compare Geez_Gofa_C with Noto Sans Ethiopic, character by character, with Unicode values.">
+    <link rel="canonical" href="https://debessay.github.io/Gofa_amharic_fonts/geez-full-compare.html">
+    <meta property="og:title" content="Geez_Gofa_C character comparison">
+    <meta property="og:description" content="Geez_Gofa_C next to Noto Sans Ethiopic, with a Unicode value on every character.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://debessay.github.io/Gofa_amharic_fonts/geez-full-compare.html">
+    <meta property="og:image" content="https://debessay.github.io/Gofa_amharic_fonts/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Geez_Gofa_C character comparison">
+    <meta name="twitter:description" content="Geez_Gofa_C next to Noto Sans Ethiopic, with a Unicode value on every character.">
+    <meta name="twitter:image" content="https://debessay.github.io/Gofa_amharic_fonts/og.png">
     <style>
         body {
             font-family: system-ui, sans-serif;
-            margin: 30px;
-            background: #fafafa;
-            color: #222;
+            margin: 0;
+            background: #f3efe6;
+            color: #1c1915;
             line-height: 1.6;
         }
-        h1, h2 { text-align: center; color: #222; }
-        .instructions {
-            max-width: 1000px;
-            margin: 0 auto 30px;
-            background: #fffef0;
-            padding: 16px;
-            border: 1px solid #e0d890;
-            border-radius: 8px;
+        .bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem 1rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.8rem 1.2rem;
+            background: #fffdf8;
+            border-bottom: 1px solid #e2d7c6;
         }
-        table {
-            width: 100%;
+        .bar a { color: #0d5c3d; font-weight: 600; text-decoration: none; }
+        .bar a:hover { text-decoration: underline; }
+        main { padding: 1.2rem 1rem 2.5rem; }
+        h1, h2 { text-align: center; color: #1c1915; }
+        h1 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0.3rem; }
+        h2 { font-size: 1rem; font-weight: 500; color: #5c564c; }
+        .instructions {
+            max-width: 920px;
+            margin: 0 auto 1.4rem;
+            background: #fffdf8;
+            padding: 16px;
+            border: 1px solid #e2d7c6;
+            border-radius: 12px;
+        }
+        .table-wrap {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
             max-width: 1600px;
             margin: 0 auto 40px;
+        }
+        table {
+            width: max-content;
+            min-width: 100%;
             border-collapse: collapse;
             background: white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         th, td {
             padding: 12px 8px;
-            border: 1px solid #ddd;
+            border: 1px solid #e2d7c6;
             text-align: center;
             font-size: 34px;
             vertical-align: middle;
             min-width: 80px;
-            position: relative; /* for absolute positioning of unicode label */
+            position: relative;
         }
-        th { background: #e8f0ff; font-size: 15px; color: #444; }
+        th { background: #f7f3ea; font-size: 15px; color: #444; }
 
-        .noto { 
-            font-family: "Noto Sans Ethiopic", Arial, sans-serif;
-            background: #f9f9ff;
+        .noto {
+            font-family: "Noto Sans Ethiopic", sans-serif;
+            background: #f7f8f4;
         }
-        .zenawi { 
-            font-family: 'Geez_Gofa_C', 'Comic Sans MS', cursive, sans-serif !important;
-            background: #fff0f0;
+        .zenawi {
+            font-family: "Geez_Gofa_C", sans-serif;
+            font-synthesis: none;
+            background: #fffdf8;
             position: relative;
             min-height: 90px;
         }
-        .zenawi::after {
-            content: "ZENAWi NOT LOADED";
-            position: absolute;
-            inset: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            font-weight: bold;
-            color: #c62828;
-            background: rgba(255,235,238,0.9);
-            border: 3px dashed #d32f2f;
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .zenawi-fallback .zenawi::after { opacity: 1; }
 
         .attention {
             background-color: #fff3cd !important;
         }
         .attention sup {
-            color: #d32f2f;
+            color: #8a3b12;
             font-size: 0.6em;
             font-weight: bold;
             margin-left: 4px;
         }
 
-        /* NEW: Unicode code point label below each character */
         .unicode-label {
             position: absolute;
             bottom: 4px;
             right: 2px;
             font-size: 10px;
             color: #777;
-            font-family: monospace;
+            font-family: ui-monospace, monospace;
             opacity: 0.7;
             pointer-events: none;
         }
@@ -94,34 +106,41 @@
         .size-control {
             text-align: center;
             margin: 20px 0 30px;
-            font-size: 18px;
+            font-size: 1rem;
         }
-        input[type="range"] { width: 400px; margin: 0 15px; }
+        input[type="range"] { width: min(400px, 70vw); margin: 0 12px; vertical-align: middle; }
+        @media (max-width: 640px) {
+            h2 { padding: 0 0.5rem; }
+            th, td { min-width: 64px; }
+        }
     </style>
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
 @font-face {
-  font-family: 'Geez_Gofa_C';
-  src: url('https://cdn.jsdelivr.net/gh/debessay/Gofa_amharic_fonts@main/Geez_Gofa_C_200_regular_normal_plain.woff2') format('woff2');
-  font-weight: 200;
+  font-family: "Geez_Gofa_C";
+  src: url("Geez_Gofa_C_200_regular_normal_plain.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
     </style>
 </head>
 <body>
-
-    <h1>Font Comparison – Noto Sans Ethiopic ↔ Geez_Gofa_C</h1>
-    <h2>Alternating columns: Noto | Geez_Gofa | Noto | Geez_gofa ... (with Unicode below each character)</h2>
+    <header class="bar">
+        <a href="./">Geez_Gofa_C</a>
+        <a href="./#download">Download</a>
+    </header>
+    <main>
+    <h1>Geez_Gofa_C and Noto Sans Ethiopic</h1>
+    <h2>Odd columns are Noto Sans Ethiopic. Even columns are Geez_Gofa_C. The small label is the Unicode value.</h2>
 
     <div class="instructions">
-        <strong>Layout:</strong><br>
-        • Odd columns = Noto Sans Ethiopic<br>
-        • Even columns = Geez_Gofa_C<br>
-        • Small gray text below each character = Unicode hex code (e.g. 1200 for ሀ)<br>
-        • Yellow + * = Geez_Gofa_B fonts only 
+        <strong>How to read this chart.</strong>
+        Odd columns use Noto Sans Ethiopic. Even columns use Geez_Gofa_C.
+        The gray text is the Unicode hex value, such as 1200 for ሀ.
+        A yellow cell is a character marked in this chart as drawn differently in Geez_Gofa_C.
     </div>
 
     <div class="size-control">
@@ -130,17 +149,20 @@
         <span id="sizevalue">34 px</span>
     </div>
 
+    <div class="table-wrap">
     <table>
         <thead>
             <tr>
-                <th colspan="16">Comparison (Noto ↔ Zenawi alternating) + Unicode</th>
+                <th colspan="16">Noto Sans Ethiopic and Geez_Gofa_C</th>
             </tr>
         </thead>
         <tbody id="pairs"></tbody>
     </table>
+    </div>
+    </main>
 
     <script>
-        // Your intentionally modified characters (highlighted in Zenawi columns)
+        // Characters marked as drawn differently in Geez_Gofa_C
         const intentional = new Set([
             'ሃ', 'ሐ', 'ሑ', 'ሒ', 'ሓ', 'ሔ', 'ሕ', 'ሖ', 'ሏ', 'ሗ', 'ሟ', 'ሧ', 'ሦ', 'ሥ', 'ሤ',
             'ሣ', 'ሢ', 'ሡ', 'ሠ', 'ሯ', 'ሷ', 'ሿ', 'ቇ', 'ቧ', 'ቯ', 'ቷ', 'ቿ', 'ኀ', 'ኁ', 'ኂ', 'ኃ',
@@ -158,7 +180,7 @@
             'ꬑ', 'ꬒ', 'ꬓ', 'ꬔ', 'ꬕ', 'ꬖ', 'ꬠ', 'ꬡ', 'ꬢ', 'ꬣ', 'ꬤ', 'ꬥ', 'ꬦ', 'ꬨ', 'ꬩ', 'ꬪ', 'ꬫ'
         ]);
 
-        // All characters you want to compare (Noto and Zenawi use the same character)
+        // Characters to compare. Noto Sans Ethiopic and Geez_Gofa_C use the same character.
         const characters = [
 
 
@@ -205,7 +227,7 @@
             'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',
             'q','r','s','t','u','v','w','x','y','z',
             'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P',
-            '0','1','2','3','4','5','6','7','8','9','.',' ,',':',';','!','?',
+            '0','1','2','3','4','5','6','7','8','9','.',',',':',';','!','?',
         ];
 
         
@@ -242,13 +264,12 @@
                     tdNoto.innerHTML = char + `<span class="unicode-label">${getUnicodeHex(char)}</span>`;
                     tr.appendChild(tdNoto);
 
-                    // Zenawi column
                     const isIntentional = intentional.has(char);
-                    const tdZenawi = document.createElement('td');
-                    tdZenawi.className = `zenawi zenawi-fallback ${isIntentional ? 'attention' : ''}`;
-                    tdZenawi.innerHTML = char + (isIntentional ? '<sup>*</sup>' : '') + 
+                    const tdGofa = document.createElement('td');
+                    tdGofa.className = `zenawi ${isIntentional ? 'attention' : ''}`;
+                    tdGofa.innerHTML = char + (isIntentional ? '<sup>*</sup>' : '') +
                                         `<span class="unicode-label">${getUnicodeHex(char)}</span>`;
-                    tr.appendChild(tdZenawi);
+                    tr.appendChild(tdGofa);
                 });
 
                 // Fill remaining columns if needed
